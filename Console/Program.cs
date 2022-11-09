@@ -67,7 +67,6 @@ namespace GithubActionsLab
         {
             return double.Parse(x) + double.Parse(y);
         }
-
         public static double Subtract(string x, string y)
         {
             return double.Parse(x) - double.Parse(y);
@@ -80,11 +79,9 @@ namespace GithubActionsLab
         {
             return double.Parse(x) / double.Parse(y);
         }
-
-        // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            return Math.Pow(double.Parse(x), double.Parse(y));
         }
     }
 
